@@ -1,0 +1,172 @@
+/* Your existing CSS styles */
+/* Add styles for the LinkedIn logo */
+.linkedin-logo {
+    width: 30px; /* Adjust size as needed */
+    height: auto;
+    margin-left: 10px; /* Adjust spacing from other nav items */
+  }
+  
+  /* General styles */
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #333;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+  }
+    
+  .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+  }
+  
+  header {
+      background-image: url("iron-man-background.jpg");
+      background-size: cover;
+      height: calc(100vh - 150px); /* Adjusted to accommodate the circle */
+      display: flex;
+      flex-direction: column; /* Allows the circle and text to be stacked */
+      justify-content: flex-end; /* Positions the text at the bottom */
+      align-items: center;
+      text-align: center;
+  }
+  
+  header h1 {
+      font-size: 4em;
+      color: #f00;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  header h2 {
+      font-size: 1.5em;
+      font-weight: normal;
+  }
+  
+  nav {
+      background-color: #000;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 3px solid #f00;
+  }
+  
+  nav ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+  }
+  
+  nav li {
+      margin: 0 10px;
+  }
+  
+  nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px;
+      border-radius: 5px;
+  }
+  
+  nav a:hover {
+      background-color: #f00;
+      color: #fff;
+  }
+  
+  main {
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+  
+  section {
+      width: 48%;
+      margin-bottom: 20px;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  section h2 {
+      font-size: 2em;
+      color: #f00;
+      margin-bottom: 10px;
+  }
+  
+  section p {
+      color: #fff;
+      line-height: 1.5;
+      font-size: 1.2em;
+  }
+  
+  footer {
+      background-color: #000;
+      padding: 10px;
+      text-align: center;
+      color: #fff;
+      margin-top: 20px;
+      border-top: 3px solid #f00;
+  }
+  
+  .circle-container {
+      width: 150px; /* Adjust the size of the circle */
+      height: 150px; /* Adjust the size of the circle */
+      border-radius: 50%; /* Makes it a circle */
+      overflow: hidden; /* Ensures the photo stays within the circle */
+      margin: 0 auto 20px; /* Adjust margin as needed */
+  }
+  
+  .profile-photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensures the photo fills the circle */
+  }
+  
+  .three-container {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+      perspective: 500px;
+  }
+  
+  .three-scene {
+      width: 100%;
+      height: 500px;
+      background-color: #333;
+  }
+  
+  .three-camera {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      transform: translateA(-50%, -50%);
+  }
+  
+  .three-renderer {
+      width: 100%;
+      height: 100%;
+  }
+  
+  .three-model {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      transform: translate(-50%, -50%) rotateX(-10deg) rotateY(10deg);
+  }
+  /* Add a hover effect to all elements */
+*:hover {
+    box-shadow: 0 0 10px 5px #f00;
+  }
+  
+  /* Add a transition effect to the box-shadow property */
+  * {
+    transition: box-shadow 0.3s ease;
+  }
+  

@@ -78,7 +78,7 @@
       padding: 20px;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: center;
   }
   
   section {
@@ -161,6 +161,28 @@
       transform: translate(-50%, -50%) rotateX(-10deg) rotateY(10deg);
   }
   /* Add a hover effect to all elements */
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact *{
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #000;
+    color: red;
+}
+
+.contact button{
+    width: 100px;
+    border-radius: 20px;
+}
+
 *:hover {
     box-shadow: 0 0 10px 5px #f00;
   }
